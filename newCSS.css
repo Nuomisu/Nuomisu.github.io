@@ -1,0 +1,35 @@
+#top_menu_wrapper {
+	clear: both;
+	width: 100%;
+	height: 571px;
+	background: url(img/back2.jpg) no-repeat top center;
+}
+
+#top_wrapper {
+	clear: both;
+	width: 100%;
+	height: 391px;
+	background: url(img/back2.jpg) no-repeat top center;
+}
+
+#top_wrapper  #top_title {
+	float: left;
+	width: 700px;
+	padding-top: 70px;
+	padding-left: 100px;
+}
+
+#top_wrapper  #top_title h1 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+#top_wrapper  #top_title h1 a {
+	margin: 0px;
+	padding: 0px;
+	font-size: 50px;
+	color: #ffef38;
+	font-weight: normal;
+	text-decoration: none;
+}
