@@ -1,15 +1,20 @@
-#top_menu_wrapper {
-	clear: both;
-	width: 100%;
-	height: 571px;
-	background: url(img/back2.jpg) no-repeat top center;
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #666;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	line-height:1.5em; 
+	background-color: #821764;
+    background-image: url(img/back0.jpg);
+	background-repeat: repeat;
 }
 
 #top_wrapper {
 	clear: both;
 	width: 100%;
-	height: 391px;
-	background: url(img/back2.jpg) no-repeat top center;
+	height: 444px;
+	background: url(img/header4.png) no-repeat top center;
 }
 
 #top_wrapper  #top_title {
@@ -33,3 +38,114 @@
 	font-weight: normal;
 	text-decoration: none;
 }
+
+#nav_content {
+	clear: both;
+	width: 100%;
+	height: 980px;
+	background: url(img/content4.png) center repeat-y;
+}
+
+#nav_wrapper {
+	clear: both;
+	width: 100%;
+	height: 204px;
+	background: url(img/menu4.png) no-repeat top center;
+}
+
+
+
+.article_wrapper {
+	clear: both;
+	height: 300px;
+	padding-bottom: 30px;
+	border-bottom: 1px dashed #CCC;
+	margin-bottom: 30px;
+}
+
+.article_wrapper .article_date {
+	float: left;
+	width: 120px;
+	height: 130px;
+	padding: 38px 15px 0 0;
+	text-align: center;
+	font-size: 30px;
+	color: #000000;
+	font-weight: bold;
+	background: url(img/templatemo_date.png) no-repeat top left;
+}
+
+.article_wrapper .article_date span {
+	display: block;
+	color: #000000;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.article_wrapper h2  {
+	margin: 0;
+	padding: 10px 0 10px 0;
+	line-height: 30px;
+}
+
+.article_wrapper p {
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+#blog_sidebar {
+	float: left;
+	color: #000;
+
+	
+}
+
+#templatemo_footer {
+	width: 980px;
+	margin: 0 auto;
+	padding: 0 10px 30px;
+	text-align: center;
+	color: #fff;
+}
+
+#templatemo_footer a {
+	color: #fff;
+}
+
+#templatemo_main_bottom {
+	width: 1050px;
+	height: 188px;
+	margin: 0 auto;
+	background: url(img/bottom4.png) no-repeat center top;
+}
+
+#gallery {
+		width: 600px;
+		padding: 40px 0;
+	}
+	#gallery ul { list-style: none; margin: 0; padding: 0; }
+	#gallery ul li {
+		float: left;
+		display: block; 
+		padding: 0;
+		margin: 0;
+		width: 245px;
+		padding: 10px;
+		background: #f4f1f3;
+		border: 1px solid #e0dee0;
+		margin: 0 0 30px 30px;
+	}
+	
+	#gallery ul li h5 {
+		margin-bottom: 15px;
+	}
+	 
+	#gallery ul img {
+		width: 245px;
+		height: 130px;
+		border: none;
+		margin-bottom: 10px;
+	}
+
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
