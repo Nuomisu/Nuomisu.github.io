@@ -1,5 +1,1 @@
-window.Blog = Ember.Application.create();
-
-
-Blog.ApplicationAdapter = DS.FixtureAdapter.extend();
-
+window.BlogApp = Ember.Application.create();
