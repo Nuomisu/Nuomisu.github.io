@@ -1,244 +1,259 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Pagination Example</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="blogCSS.css" type="text/css">
+  <head>
+    <title>New Try</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="blogCSS.css" type="text/css">
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   
-<!-- FancyBox -->
-<link rel="stylesheet" href="fancybox-2.1.5/jquery.fancybox.css" type="text/css" />
-<script type="text/javascript" src="fancybox-2.1.5/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $("a.fb_image").fancybox({
-        openEffect: 'elastic',
-        closeEffect: 'elastic',
-        openSpeed: 600,
-        closeSpeed: 600,
-        helpers: {
-            overlay: {
-                closeClick: true,
-            },
-            title: {
-                type: 'over'
+    <link rel="stylesheet" href="fancybox-2.1.5/jquery.fancybox.css" type="text/css" />
+    <script type="text/javascript" src="fancybox-2.1.5/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("a.fb_image").fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic',
+            openSpeed: 600,
+            closeSpeed: 600,
+            helpers: {
+                overlay: {
+                    closeClick: true,
+                },
+                title: {
+                    type: 'over'
+                }
             }
-        }
+        });
     });
-});
-</script>
-<!-- End FancyBox -->
+    </script>
 
 
-
-</head>
-<body>
+  </head>
 
 
-<script type="text/x-handlebars" data-template-name="person">
-  <div id = "top_wrapper">
-    <div class="col-md-8 col-md-offset-2" >
-
-      <div id = "top_title">
-       <h1><a><strong>Lu Shumin</strong></a></h1>
+  <body>
+    <div id = "top_wrapper">
+      <div class="col-md-8 col-md-offset-2" >
+        <div id = "top_title">
+          <h1><a><strong>Lu Shumin</strong></a></h1>
+        </div>
       </div>
-
     </div>
-  </div>
 
-  <div id="nav_content"><div id = "nav_wrapper">
     
 
-    <div class="col-md-6 col-md-offset-3" >
-      <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#Home">Home</a></li>
-          <li><a data-toggle="tab" href="#Gallery">Gallery</a></li>
-          <li><a data-toggle="tab" href="#Project">Project</a></li>
-          <li><a data-toggle="tab" href="#AboutMe">About Me</a></li>
-          
-      </ul>
+    <div id = "app">
+      <script type="text/x-handlebars">
+
+        <div id="nav_content">
+          <div id = "nav_wrapper">
+            <div class="col-md-6 col-md-offset-3" >
+              <ul class="nav nav-tabs">
+                  <li>{{#linkTo 'article'}}Home{{/linkTo}}</li> 
+                  <li>{{#linkTo 'gallery'}}Gallery{{/linkTo}}</li> 
+                  <li>{{#linkTo 'project'}}Projects{{/linkTo}}</li> 
+                  <li>{{#linkTo 'about'}}About Me{{/linkTo}}</li> 
+              </ul>
+
+              <div class="tab-content">             
+                  <div class="col-md-12" >
+                      {{outlet}}
+                  </div>
+              </div>
 
 
-      <div class="tab-content">
-          <div id="Home" class="tab-pane fade in active">               
-              <div class="col-md-12" >
+            </div>
+          </div>
+        </div>
+
+
+      </script>
+    </div>
+
+    <div id="my_main_bottom"></div>
+    <div id="my_footer">
+      Copyright © 2048 <a href="index.html">Lu Shumin</a> | 
+      <a href="http://www.iwebsitetemplate.com" target="_parent">My Template</a>
+    </div>
+
+    
+
+
+    <script src="js/lib/handlebars-1.0.0-rc.4.js" type="text/javascript"></script>
+    <script src="js/lib/ember-1.0.0-rc.5.js" type="text/javascript"></script>
+    <script src="js/lib/ember-data.js" type="text/javascript"></script>
+    <script src="js/lib/pagination.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/router.js" type="text/javascript"></script>
+    <script src="js/models/article.js" type="text/javascript"></script>
+    <script src="js/models/gallery.js" type="text/javascript"></script>
+    <script src="js/models/project.js" type="text/javascript"></script>
+    <script src="js/views/paginationView.js" type="text/javascript"></script>
+    <script src="js/controllers/articleController.js" type="text/javascript"></script>
+    <script src="js/controllers/galleryController.js" type="text/javascript"></script>
+    <script src="js/controllers/projectController.js" type="text/javascript"></script>
+
+
+    <script type="text/x-handlebars" data-template-name="article">
+      {{#each article in controller.paginatedContent}}
+        <div class = "article_wrapper">
                 
-                {{#each person in controller.paginatedContent}}
-                  <div class = "article_wrapper">
-                          
-                    
-                    <div class = "article_date">
-                      <span>{{person.date}}</span>
-                    </div>
-
-                    
-                    <h2>{{person.title}}</h2>
-                    <p>{{person.introduction}}</p>
-                    <a>Continue reading...</a>
-                          
-                          
-                  </div>
-                {{/each}}
-
-                <div class="col-md-5 col-md-offset-4" >
-                  <div id = "bottom_page">
-                    {{#linkTo 'person.page' prevPage target="controller"}}Prev{{/linkTo}}
-                    <ul class="pagination gui-text">
-                      {{#each pages}}
-                        {{view PersonApp.PaginationView contentBinding="this"}}
-                      {{/each}}
-                    </ul>
-                    {{#linkTo 'person.page' nextPage target="controller"}}Next{{/linkTo}}
-                  </div>
-                </div>
-
-              </div>
+          
+          <div class = "article_date">
+            <span>{{article.date}}</span>
           </div>
 
-          <div id="Gallery" class="tab-pane fade">
-              <div class="col-md-10 col-md-offset-1" >
-                <h2>Gallery Page</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit sodales dolor, nec hendrerit nisi dictum ac. </p>
-              </div>
+          
+          <h2>{{article.title}}</h2>
+          <p>{{article.introduction}}</p>
+          {{#linkTo 'perarticle' article}}Continue reading...{{/linkTo}}
+                
+                
+        </div>
+      {{/each}}
 
-              <div id="gallery">
-                <ul>
-             
+      <div class="col-md-5 col-md-offset-4" >
+        <div id = "bottom_page">
+          {{#linkTo 'article.page' prevPage target="controller"}}Prev{{/linkTo}}
+          <ul class="pagination gui-text">
+            {{#each pages}}
+              {{view MyApp.PaginationView contentBinding="this"}}
+            {{/each}}
+          </ul>
+          {{#linkTo 'article.page' nextPage target="controller"}}Next{{/linkTo}}
+        </div>
+      </div>
+    </script>
 
-                    <li>
-                        <a class="fb_image" href="img/gallery/image_01_b.jpg" title="Project 1"><img src="img/gallery/image_01.jpg" alt="1" /></a>
+    <script type="text/x-handlebars" data-template-name="gallery">
 
-                        <h5>Project 1</h5>
-                        <p>Integer sed nisi sapien, ut gravida mauris. Nam et tellus libero.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_02_b.jpg" class="fb_image" title="Project 2"><img src="img/gallery/image_02.jpg" alt="2" /></a>
-                        <h5>Project 2</h5>
-                        <p>Mauris risus magna, blandit ac suscipit at, tristique id erat.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_03_b.jpg" class="fb_image" title="Project 3"><img src="img/gallery/image_03.jpg" alt="3" /></a>
-                        <h5>Project 3</h5>
-                        <p>Etiam eu ipsum a arcu sodales consequat sit amet at orci. Nulla in luctus elit.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_04_b.jpg" class="fb_image" title="Project 4"><img src="img/gallery/image_04.jpg" alt="4" /></a>
-                        <h5>Project 4</h5>
-                        <p>Divamus interdum, tortor at pellentesque pulvinar, diam quam blandit nulla.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_05_b.jpg" class="fb_image" title="Project 5"><img src="img/gallery/image_05.jpg" alt="5" /></a>
-                        <h5>Project 5</h5>
-                        <p>Vivamus condimentum ligula sit amet lacus tincidunt imperdiet.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_06_b.jpg" class="fb_image" title="Project 6"><img src="img/gallery/image_06.jpg" alt="6" /></a>
-                        <h5>Project 6</h5>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>
-                    </li>
-                </ul>       
-      
-                <div class="cleaner"></div>
-              </div>
-
-
-
-          </div>
-
-          <div id="Project" class="tab-pane fade">
-              <div class="col-md-10 col-md-offset-1" >
-                <h2>Project Page</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit sodales dolor, nec hendrerit nisi dictum ac. </p>
-              </div>
-
-              <div id="gallery">
-                <ul>
-             
-
-                    <li>
-                        <a class="fb_image" href="img/gallery/image_01_b.jpg" title="Project 1"><img src="img/gallery/image_01.jpg" alt="1" /></a>
-
-                        <h5>Project 1</h5>
-                        <p>Integer sed nisi sapien, ut gravida mauris. Nam et tellus libero.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_02_b.jpg" class="fb_image" title="Project 2"><img src="img/gallery/image_02.jpg" alt="2" /></a>
-                        <h5>Project 2</h5>
-                        <p>Mauris risus magna, blandit ac suscipit at, tristique id erat.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_03_b.jpg" class="fb_image" title="Project 3"><img src="img/gallery/image_03.jpg" alt="3" /></a>
-                        <h5>Project 3</h5>
-                        <p>Etiam eu ipsum a arcu sodales consequat sit amet at orci. Nulla in luctus elit.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_04_b.jpg" class="fb_image" title="Project 4"><img src="img/gallery/image_04.jpg" alt="4" /></a>
-                        <h5>Project 4</h5>
-                        <p>Divamus interdum, tortor at pellentesque pulvinar, diam quam blandit nulla.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_05_b.jpg" class="fb_image" title="Project 5"><img src="img/gallery/image_05.jpg" alt="5" /></a>
-                        <h5>Project 5</h5>
-                        <p>Vivamus condimentum ligula sit amet lacus tincidunt imperdiet.</p>
-                    </li>
-                    <li>
-                        <a href="img/gallery/image_06_b.jpg" class="fb_image" title="Project 6"><img src="img/gallery/image_06.jpg" alt="6" /></a>
-                        <h5>Project 6</h5>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>
-                    </li>
-                </ul>       
-      
-                <div class="cleaner"></div>
-              </div>
-          </div>
-
-          <div id="AboutMe" class="tab-pane fade">
-              <h3>Section C</h3>
-              <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
-          </div>
+      <div class="col-md-10 col-md-offset-1" >
+        <h2>Gallery Page</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit sodales dolor, nec hendrerit nisi dictum ac. </p>
       </div>
 
- 
-    </div>
-  
-  </div>
-  </div>
+      <div id="gallery">
+        <ul>
+          {{#each gallery in controller.paginatedContent}}
+            <li>
+                <a class="fb_image" {{bindAttr href=gallery.link1}} title="Project 1"><img {{bindAttr src=gallery.link2}} /></a>
+
+                <h5>{{gallery.name}}</h5>
+                <p>{{gallery.description}}</p>
+            </li>
+          {{/each}}
+        </ul>       
+
+        <div class="cleaner"></div>
+      </div>
 
 
+      <div class="col-md-5 col-md-offset-4" >
+        <div id = "bottom_page">
+          {{#linkTo 'gallery.page' prevPage target="controller"}}Prev{{/linkTo}}
+          <ul class="pagination gui-text">
+            {{#each pages}}
+              {{view MyApp.PaginationView2 contentBinding="this"}}
+            {{/each}}
+          </ul>
+          {{#linkTo 'gallery.page' nextPage target="controller"}}Next{{/linkTo}}
+        </div>
+      </div>
 
+    </script>
 
-  <div id="templatemo_main_bottom"></div>
+    <script type="text/x-handlebars" data-template-name="project">
 
-  <div id="templatemo_footer">
+      {{#each project in controller.paginatedContent}}
+        {{#linkTo 'perproject' project}}
+        <div class = "project_wrapper" >
+            {{project.title}}
+            <p>{{project.description}}</p>
+        </div>
+        {{/linkTo}}
 
-    Copyright © 2048 <a href="index.html">Lu Shumin</a> | 
-    <a href="http://www.iwebsitetemplate.com" target="_parent">My Template</a>
-  
-  </div>
+      {{/each}}
 
+      <div class="col-md-5 col-md-offset-4" >
+        <div id = "bottom_page">
+          {{#linkTo 'gallery.page' prevPage target="controller"}}Prev{{/linkTo}}
+          <ul class="pagination gui-text">
+            {{#each pages}}
+              {{view MyApp.PaginationView3 contentBinding="this"}}
+            {{/each}}
+          </ul>
+          {{#linkTo 'gallery.page' nextPage target="controller"}}Next{{/linkTo}}
+        </div>
+      </div>
 
-</script>    
-  
+    </script>
 
-<script type="text/x-handlebars" data-template-name="pagination">
+    <script type="text/x-handlebars" data-template-name="about">
+    <img src="img/newgirl.png" alt = "me">
+    </script>
 
-{{#with view}}
-{{#linkTo 'person.page' page}}
-  {{content.page_id}}
-{{/linkTo}}
-{{/with}}
+    <script type="text/x-handlebars" data-template-name="perarticle">
+      <div class="post_section">
+        <div class="post_date">
+            <span>{{model.date}}</span>
+        </div>
 
-</script>
+        <div class="post_content">
+          <h2>{{model.title}}</h2>
+          <p>{{breaklines model.content}}</p>
+        </div>
+        
+        
+      </div>
+    </script>
 
+    <script type="text/x-handlebars" data-template-name="perproject">
+      <div class="post_section">
+        <div class="post_date">
+            <span>{{model.date}}</span>
+        </div>
 
-<script src="js/lib/handlebars-1.0.0-rc.4.js" type="text/javascript"></script>
-<script src="js/lib/ember-1.0.0-rc.5.js" type="text/javascript"></script>
-<script src="js/lib/ember-data.js" type="text/javascript"></script>
-<script src="js/lib/pagination.js" type="text/javascript"></script>
-<script src="js/person.js" type="text/javascript"></script>
+        <div class="post_content">
+          <h2>{{model.title}}</h2>
+          <p>{{breaklines model.content}}</p>
+        </div>
+        
+        
+      </div>
+    </script>
 
-</body>
+    <script type="text/x-handlebars" data-template-name="pagination">
+
+      {{#with view}}
+      {{#linkTo 'article.page' page}}
+        {{content.page_id}}
+      {{/linkTo}}
+      {{/with}}
+
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="pagination2">
+
+      {{#with view}}
+      {{#linkTo 'gallery.page' page}}
+        {{content.page_id}}
+      {{/linkTo}}
+      {{/with}}
+
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="pagination3">
+
+      {{#with view}}
+      {{#linkTo 'project.page' page}}
+        {{content.page_id}}
+      {{/linkTo}}
+      {{/with}}
+
+    </script>
+
+  </body>
 </html>

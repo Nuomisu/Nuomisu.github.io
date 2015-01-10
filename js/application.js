@@ -1,1 +1,0 @@
-window.BlogApp = Ember.Application.create();
