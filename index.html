@@ -75,7 +75,7 @@
 
     <div id="my_main_bottom"></div>
     <div id="my_footer">
-      Copyright © 2048 <a href="index.html">Lu Shumin</a> | 
+      Copyright <a href="index.html">Lu Shumin</a> | 
       <a href="http://www.iwebsitetemplate.com" target="_parent">My Template</a>
     </div>
 
@@ -103,21 +103,21 @@
                 
           
           <div class = "article_date">
-            <span>{{article.date}}</span>
+            <span>{{breaklines article.date}}</span>
           </div>
 
           
           <h2>{{article.title}}</h2>
           <p>{{article.introduction}}</p>
-          {{#linkTo 'perarticle' article}}Continue reading...{{/linkTo}}
+          <b>{{#linkTo 'perarticle' article}}Continue reading...{{/linkTo}}</b>
                 
                 
         </div>
       {{/each}}
 
-      <div class="col-md-5 col-md-offset-4" >
-        <div id = "bottom_page">
-          {{#linkTo 'article.page' prevPage target="controller"}}Prev{{/linkTo}}
+      <div class="col-md-8 col-md-offset-7" >
+        <div id = "bottom_page_home">
+          {{#linkTo 'article.page' prevPage target="controller" classNames="pre_next"}}Prev{{/linkTo}}
           <ul class="pagination gui-text">
             {{#each pages}}
               {{view MyApp.PaginationView contentBinding="this"}}
@@ -131,7 +131,7 @@
     <script type="text/x-handlebars" data-template-name="gallery">
 
       <div class="col-md-10 col-md-offset-1" >
-        <h2>Gallery Page</h2>
+        <b><h2>Gallery</h2></b>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit sodales dolor, nec hendrerit nisi dictum ac. </p>
       </div>
 
@@ -151,8 +151,8 @@
       </div>
 
 
-      <div class="col-md-5 col-md-offset-4" >
-        <div id = "bottom_page">
+      <div class="col-md-5 col-md-offset-7" >
+        <div id = "bottom_page_gallery">
           {{#linkTo 'gallery.page' prevPage target="controller"}}Prev{{/linkTo}}
           <ul class="pagination gui-text">
             {{#each pages}}
@@ -168,58 +168,71 @@
     <script type="text/x-handlebars" data-template-name="project">
 
       {{#each project in controller.paginatedContent}}
-        {{#linkTo 'perproject' project}}
+        
         <div class = "project_wrapper" >
-            {{project.title}}
+          <div class = "project_title">
+            {{#linkTo 'perproject' project}}
+              {{project.title}}
+            {{/linkTo}}
+          </div>
+
+          <div class = "project_content"> 
             <p>{{project.description}}</p>
+          </div>
+          
         </div>
-        {{/linkTo}}
+        
 
       {{/each}}
 
-      <div class="col-md-5 col-md-offset-4" >
-        <div id = "bottom_page">
-          {{#linkTo 'gallery.page' prevPage target="controller"}}Prev{{/linkTo}}
+      <div class="col-md-5 col-md-offset-7" >
+        <div id = "bottom_page_project">
+          
+            {{#linkTo 'gallery.page' prevPage target="controller"}}Prev{{/linkTo}}
           <ul class="pagination gui-text">
             {{#each pages}}
               {{view MyApp.PaginationView3 contentBinding="this"}}
             {{/each}}
           </ul>
-          {{#linkTo 'gallery.page' nextPage target="controller"}}Next{{/linkTo}}
+            {{#linkTo 'gallery.page' nextPage target="controller"}}Next{{/linkTo}}
         </div>
       </div>
 
     </script>
 
     <script type="text/x-handlebars" data-template-name="about">
-    <img src="img/newgirl.png" alt = "me">
+    
+      <div id = "about">
+
+        <div id = "selfImage">
+          <img src="img/newgirl.png" alt = "me">
+        </div>
+      </div>
+    
     </script>
 
     <script type="text/x-handlebars" data-template-name="perarticle">
-      <div class="post_section">
-        <div class="post_date">
-            <span>{{model.date}}</span>
+      <div class="article_section">
+
+        <div class = "article_date">
+          <span>{{breaklines model.date}}</span>
         </div>
 
-        <div class="post_content">
-          <h2>{{model.title}}</h2>
-          <p>{{breaklines model.content}}</p>
-        </div>
+        <b><h2>{{model.title}}</h2></b>
+
+        <p>{{breaklines model.content}}</p>
         
         
       </div>
     </script>
 
     <script type="text/x-handlebars" data-template-name="perproject">
-      <div class="post_section">
-        <div class="post_date">
-            <span>{{model.date}}</span>
-        </div>
+      <div class="project_section">
 
-        <div class="post_content">
+        
           <h2>{{model.title}}</h2>
           <p>{{breaklines model.content}}</p>
-        </div>
+        
         
         
       </div>

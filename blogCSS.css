@@ -74,7 +74,7 @@ body {
 
 #gallery {
 		width: 700px;
-		padding: 90px 25px;
+		padding: 0px 26px;
 	}
 	#gallery ul { list-style: none; margin: 0; padding: 0; }
 	#gallery ul li {
@@ -84,7 +84,7 @@ body {
 		margin: 0;
 		width: 270px;
 		padding: 13px;
-		background: url(img/smallBack.png) no-repeat center top;
+		background: url(img/smallback1.png) no-repeat center top;
 		border: 0px solid #e0dee0;
 		margin: 0 0 30px 30px;
 	}
@@ -105,7 +105,7 @@ body {
 .article_wrapper {
 	clear: both;
 	height: 283px;
-	padding: 40px;
+	padding: 50px;
 	border-bottom: 1px;
 	margin-bottom: 20px;
 	background: url(img/try2.png) no-repeat top left;
@@ -114,13 +114,13 @@ body {
 .article_wrapper .article_date {
 	float: left;
 	width: 120px;
-	height: 130px;
-	padding: 38px 15px 0 0;
+	height: 100%;
+	padding: 40px 30px 0 0;
 	text-align: center;
 	font-size: 30px;
 	color: #000000;
 	font-weight: bold;
-	background: url() no-repeat top left;
+	background: url(img/date_back.png) no-repeat top left;
 }
 
 .article_wrapper .article_date span {
@@ -132,98 +132,133 @@ body {
 
 .article_wrapper h2  {
 	margin: 0;
-	padding: 10px 0 10px 0;
+	padding: 20px 0 20px 0;
 	line-height: 30px;
+	font-size: 35px;
+	color: #B40404;
+	font-weight: bold;
 }
 
 .article_wrapper p {
 	text-align: justify;
 	margin-bottom: 10px;
+	color: #151515;
+	font-size: 15px;
 }
 
 .project_wrapper {
 	clear: both;
-	height: 210px;
+	height: 230px;
 	padding: 40px;
 	border-bottom: 1px;
+	background: url(img/6.png) no-repeat top left;	
+}
+
+.project_title {
+	font-size: 30px;
+	padding-top: 30px;
+	margin-left: 20px;
 	margin-bottom: 20px;
-	background: url(img/try2.png) no-repeat top left;	
+	font-weight: bold;
 }
 
-post_section {
-	clear: both;
-	padding-bottom: 30px;
-	border-bottom: 1px dashed #CCC;
-	margin-bottom: 30px;
+.project_content p {
+	margin-left: 20px;
+	font-size: 15px;
+	font-weight: normal;
+	color: #000000;
 }
 
-.post_section .post_date {
+.article_section {
+	padding: 5%;
+	margin-left: 3%;
+	height: 900px;
+	background: url(img/perarticle.png) no-repeat center top;
+}
+
+.article_section .article_date {
 	float: left;
 	width: 120px;
-	height: 90px;
-	padding: 38px 15px 0 0;
+	height: 100%;
+	padding: 30px 30px 0 0;
 	text-align: center;
 	font-size: 30px;
-	color: #FFFFFF;
+	color: #000000;
 	font-weight: bold;
-	background: url(images/templatemo_date.png) no-repeat top left;
+	background: url(img/date_back.png) no-repeat top left;
 }
 
-.post_section .post_date span {
+.article_section .article_date span{
 	display: block;
-	color: #FFFFFF;
+	color: #000000;
 	font-size: 16px;
 	margin-top: 5px;
 }
 
-.post_section .post_content {
-	float: right;
-	width: 490px;
-}
-
-.post_section h2  {
+.article_section h2{
 	margin: 0;
-	padding: 10px 0 10px 0;
+	padding: 20px 0 20px 0;
 	line-height: 30px;
-}
-
-.post_section p {
-	text-align: justify;
-	margin-bottom: 10px;
-}
-
-.post_section img {
-	clear: both;
-	display: block;
-	margin: 20px 0;
-}
-
-.post_section .comment {
-	position: absolute;
-	top: -10px;
-	right: 0px;
-	width: 70px;
-	height: 42px;
-	text-align: center;
-	padding-top: 10px;
-	font-size: 16px;
-	font-weight: bold;
-	background: url(images/templatemo_comment.png) no-repeat;
-}
-
-.post_section .comment a {
-	color: #333;
-	text-decoration: none;
-}
-
-.post_section .comment_tab {
-	padding: 10px 0;
-	margin: 40px 0 20px 0;
-	border-bottom: 1px dashed #666;
-	font-size: 20px;
+	font-size: 35px;
+	color: #B40404;
 	font-weight: bold;
 }
 
-#bottom_page {
-	padding-top: 20px;
+.article_section p{
+	font-size: 15px;
+	line-height: 150%;
+	color: #151515;
+}
+
+.project_section{
+	padding: 5%;
+	margin-left: 3%;
+	height: 900px;
+	background: url(img/perproject.png) no-repeat center top;
+}
+
+.project_section h2{
+	font-size: 30px;
+	padding-top: 30px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #8A0808;
+}
+
+.project_section p{
+	margin-left: 20px;
+	font-size: 15px;
+	font-weight: normal;
+	color: #000000;
+	line-height: 140%;
+}
+
+#about {
+
+}
+
+#about #selfImage {
+	margin-left: 30%;
+}
+
+.pagination{
+	padding: 0px 0px;
+	margin: 0px 5px;
+}
+
+.pre_next{
+	margin-bottom: 5px;
+}
+
+#bottom_page_home {
+	padding-top: 20%;
+}
+
+#bottom_page_gallery {
+	padding-top: 15%;
+}
+
+#bottom_page_project {
+	padding-top: 20%;
 }
