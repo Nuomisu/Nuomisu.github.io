@@ -84,7 +84,7 @@ body {
 		margin: 0;
 		width: 270px;
 		padding: 13px;
-		background: url(img/smallback1.png) no-repeat center top;
+		background: url(img/smallback.png) no-repeat center top;
 		border: 0px solid #e0dee0;
 		margin: 0 0 30px 30px;
 	}
@@ -109,7 +109,7 @@ body {
 	margin-left: 1%;
 	border-bottom: 1px;
 	margin-bottom: 20px;
-	background: url(img/try2.png) no-repeat top left;
+	background: url(img/article_back.png) no-repeat top left;
 }
 
 .article_wrapper .article_date {
@@ -152,7 +152,7 @@ body {
 	height: 230px;
 	padding: 40px;
 	border-bottom: 1px;
-	background: url(img/6.png) no-repeat top left;	
+	background: url(img/project_back.png) no-repeat top left;	
 }
 
 .project_title {

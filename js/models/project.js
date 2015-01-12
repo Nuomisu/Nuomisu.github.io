@@ -18,7 +18,7 @@ id: 2,
 title: 'Unity Game Development Project',
 description: 'One 2D game and one 3D game',
 imageLink: 'img/unity.jpg',
-content: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
+content: 'Preparing'
 },
 {
 id: 3,
@@ -31,8 +31,8 @@ content: 'With the development of the society, vehicles are becoming prevalent n
 id: 4,
 title: 'Interaction Design Project CS3240',
 description: 'Flash prototype design of a music application which can record sound, generate scores, play music in different instruments and share music',
-imageLink: 'img/gallery/image_01.jpg',
-content: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
+imageLink: '',
+content: 'Preparing'
 },
 {
 id: 5,
@@ -44,8 +44,8 @@ content: 'This project is to build a software which can build an object structur
 {
 id: 6,
 title: 'Static Program Analysis Tool Projec',
-description: 'Maecenas sed diam eget risus varius blandit sit amet non magna.',
+description: 'Preparing',
 imageLink: 'img/3201.png',
-content: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
+content: 'Preparing'
 }
 ]
