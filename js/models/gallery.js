@@ -10,36 +10,36 @@ MyApp.Gallery.FIXTURES = [
 id: 1,
 name: 'Image One',
 description: 'First Imagge',
-link1:'img/gallery/image_01_b.jpg',
-link2:'img/gallery/image_01.jpg'
+link1:'img/gallery/chenglou.png',
+link2:'img/gallery/chenglou_s.png'
 },
 {
 id: 2,
 name: 'Image Two',
 description: 'Two Imagge',
-link1:'img/gallery/image_02_b.jpg',
-link2:'img/gallery/image_02.jpg'
+link1:'img/gallery/moon.jpg',
+link2:'img/gallery/moon_s.jpg'
 },
 {
 id: 3,
 name: 'Image Three',
 description: 'Three Imagge',
-link1:'img/gallery/image_03_b.jpg',
-link2:'img/gallery/image_03.jpg'
+link1:'img/gallery/princess.png',
+link2:'img/gallery/princess_s.png'
 },
 {
 id: 4,
 name: 'Image Four',
 description: 'Four Imagge',
-link1:'img/gallery/image_04_b.jpg',
-link2:'img/gallery/image_04.jpg'
+link1:'img/gallery/flower.png',
+link2:'img/gallery/flower_s.png'
 },
 {
 id: 5,
 name: 'Image Five',
 description: 'Five Imagge',
-link1:'img/gallery/image_05_b.jpg',
-link2:'img/gallery/image_05.jpg'
+link1:'img/gallery/dao.png',
+link2:'img/gallery/dao_s.png'
 },
 {
 id: 6,

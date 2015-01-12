@@ -188,13 +188,13 @@
       <div class="col-md-5 col-md-offset-7" >
         <div id = "bottom_page_project">
           
-            {{#linkTo 'gallery.page' prevPage target="controller"}}Prev{{/linkTo}}
+            {{#linkTo 'project.page' prevPage target="controller"}}Prev{{/linkTo}}
           <ul class="pagination gui-text">
             {{#each pages}}
               {{view MyApp.PaginationView3 contentBinding="this"}}
             {{/each}}
           </ul>
-            {{#linkTo 'gallery.page' nextPage target="controller"}}Next{{/linkTo}}
+            {{#linkTo 'project.page' nextPage target="controller"}}Next{{/linkTo}}
         </div>
       </div>
 
@@ -230,10 +230,11 @@
       <div class="project_section">
 
         
-          <h2>{{model.title}}</h2>
+          <h2>{{breaklines model.title}}</h2>
           <p>{{breaklines model.content}}</p>
-        
-        
+
+          <img {{bindAttr src=model.imageLink}} alt = "0"/>
+          
         
       </div>
     </script>

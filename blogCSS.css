@@ -106,6 +106,7 @@ body {
 	clear: both;
 	height: 283px;
 	padding: 50px;
+	margin-left: 1%;
 	border-bottom: 1px;
 	margin-bottom: 20px;
 	background: url(img/try2.png) no-repeat top left;
@@ -164,6 +165,7 @@ body {
 
 .project_content p {
 	margin-left: 20px;
+	padding-top: 20px;
 	font-size: 15px;
 	font-weight: normal;
 	color: #000000;
@@ -227,11 +229,12 @@ body {
 }
 
 .project_section p{
+	padding-top: 20px;
 	margin-left: 20px;
 	font-size: 15px;
 	font-weight: normal;
 	color: #000000;
-	line-height: 140%;
+	line-height: 200%;
 }
 
 #about {
