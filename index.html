@@ -139,7 +139,7 @@
         <ul>
           {{#each gallery in controller.paginatedContent}}
             <li>
-                <a class="fb_image" {{bindAttr href=gallery.link1}} title="Project 1"><img {{bindAttr src=gallery.link2}} /></a>
+                <a class="fb_image" {{bindAttr href=gallery.link1}} {{bindAttr title=gallery.name}}><img {{bindAttr src=gallery.link2}} /></a>
 
                 <h5>{{gallery.name}}</h5>
                 <p>{{gallery.description}}</p>
@@ -208,9 +208,16 @@
           <img src="img/newgirl.png" alt = "me">
         </div>
 
-        <p>Lu Shumin</p>
-        <p>National University of Singapore (NUS)<br>Bachelor of Computing<br>Major in Computer Science <br>Specialize in visual computing & interactive media</p>
-        <p>Student Exchange Programme In UCD(University College Dublin)</p>
+        <div id = "about_content">
+          <p>Lu Shumin</p><br>
+          <p>Email: <br>nuonuomisu@gmail.com</p><br>
+
+          <p>Education: <br>National University of Singapore (NUS): <br>Bachelor of Computing (Honors)<br>Computer Science <br>Visual Computing</p>
+          <p>University College Dublin(UCD):<br>Student Exchange Programme</p>
+          <p>Singapore Senior Middle 3 Programme(SM3)</p><br>
+
+          <p>Interests: <br>Drawing & Designing<br>Software Engineering<br> Web Development</p>
+        </div>
       </div>
     
     </script>

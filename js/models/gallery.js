@@ -8,43 +8,43 @@ MyApp.Gallery = DS.Model.extend({
 MyApp.Gallery.FIXTURES = [
 {
 id: 1,
-name: 'Image One',
-description: 'First Image',
+name: 'City Gate Tower',
+description: 'One city gate Tower after a battle.',
 link1:'img/gallery/chenglou.png',
 link2:'img/gallery/chenglou_s.png'
 },
 {
 id: 2,
-name: 'Image Two',
-description: 'Two Image',
+name: 'Moon Vine',
+description: 'A weapon I designed',
 link1:'img/gallery/moon.jpg',
 link2:'img/gallery/moon_s.jpg'
 },
 {
 id: 3,
-name: 'Image Three',
-description: 'Three Image',
+name: 'Princess',
+description: 'A pink princess',
 link1:'img/gallery/princess.png',
 link2:'img/gallery/princess.png'
 },
 {
 id: 4,
-name: 'Image Four',
-description: 'Four Image',
+name: 'Flowers',
+description: 'One background of this website',
 link1:'img/gallery/flower.png',
 link2:'img/gallery/flower.png'
 },
 {
 id: 5,
-name: 'Image Five',
-description: 'Five Image',
+name: 'Sword',
+description: 'A copied line draft of one sword',
 link1:'img/gallery/dao.png',
 link2:'img/gallery/dao_s.png'
 },
 {
 id: 6,
-name: 'Image Six',
-description: 'Six Image',
+name: 'Chingay-side view',
+description: 'A side-view design of Chingay float',
 link1:'img/gallery/chingay.jpg',
 link2:'img/gallery/chingay_s.jpg'
 },
