@@ -25,14 +25,14 @@ id: 3,
 name: 'Image Three',
 description: 'Three Image',
 link1:'img/gallery/princess.png',
-link2:'img/gallery/princess_s.png'
+link2:'img/gallery/princess.png'
 },
 {
 id: 4,
 name: 'Image Four',
 description: 'Four Image',
 link1:'img/gallery/flower.png',
-link2:'img/gallery/flower_s.png'
+link2:'img/gallery/flower.png'
 },
 {
 id: 5,
@@ -53,13 +53,13 @@ id: 7,
 name: 'Image Seven',
 description: 'Seven Image',
 link1:'img/gallery/flower.png',
-link2:'img/gallery/flower_s.png'
+link2:'img/gallery/flower.png'
 },
 {
 id: 8,
 name: 'Image Eight',
 description: 'Eight Image',
 link1:'img/gallery/flower.png',
-link2:'img/gallery/flower_s.png'
+link2:'img/gallery/flower.png'
 }
 ];
