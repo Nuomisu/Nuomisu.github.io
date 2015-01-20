@@ -18,7 +18,7 @@ id: 2,
 title: 'Unity Game Development Project',
 description: 'One 2D game and one 3D game',
 imageLink: 'img/unity.jpg',
-content: 'Preparing'
+content: 'I learnt the module "Game Development" in University College Dublin during my student exchange program. There are two personal assignments in this module, and they are to build a 2D game and a 3D game by using Unity.'
 },
 {
 id: 3,
@@ -31,8 +31,8 @@ content: 'With the development of the society, vehicles are becoming prevalent n
 id: 4,
 title: 'Interaction Design Project CS3240',
 description: 'Flash prototype design of a music application which can record sound, generate scores, play music in different instruments and share music',
-imageLink: '',
-content: 'Preparing'
+imageLink: 'img/3240.jpg',
+content: 'In the CS3240, we are required '
 },
 {
 id: 5,
