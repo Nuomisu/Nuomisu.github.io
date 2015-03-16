@@ -18,7 +18,7 @@ id: 2,
 title: 'Unity Game Development Project',
 description: 'One 2D game and one 3D game',
 imageLink: 'img/unity.jpg',
-content: 'I learnt the module "Game Development" in University College Dublin during my student exchange program. There are two personal assignments in this module, and they are to build a 2D game and a 3D game by using Unity.'
+content: 'I learnt the module "Game Development" in University College Dublin during my student exchange program. There are two personal assignments in this module, and they are to build a 2D game and a 3D game by using Unity. The 2D game is picnic protector, where player need to hit flying insects to keep them away from people and food. The 3D game simulates an old European game: player controls his charactor to move the boat on the river and hit the opponent with the pole. The one who push the other out of the boat is the winner.'
 },
 {
 id: 3,
@@ -32,7 +32,7 @@ id: 4,
 title: 'Interaction Design Project CS3240',
 description: 'Flash prototype design of a music application which can record sound, generate scores, play music in different instruments and share music',
 imageLink: 'img/3240.jpg',
-content: 'In the CS3240, we are required '
+content: 'In the CS3240, we are required to build a prototype of an application that is designed by our team. We chose to design a music application which can record sound, generate scores, play music in different instruments and share music. The prototype is created by Adebe Flash, and it can display all basic functions. Main pages of this prototype are shown below.'
 },
 {
 id: 5,
