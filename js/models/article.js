@@ -19,19 +19,5 @@ title: 'Blog Two',
 date: '30 Nov\n2014',
 introduction: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.',
 content: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.'
-},
-{
-id: 3,
-title: 'Blog Three',
-date: '30 Nov\n2014',
-introduction: 'Maecenas sed diam eget risus varius blandit sit amet non magna.',
-content: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-},
-{
-id: 4,
-title: 'Blog Four',
-date: '30 Nov\n2014',
-introduction: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.',
-content: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.'
 }
 ];
