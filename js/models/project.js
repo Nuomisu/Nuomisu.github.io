@@ -15,34 +15,41 @@ content: 'Transformers have been popular in cartoons and movies in recent years.
 },
 {
 id: 2,
+title: 'Mesh Simplification, CS3242',
+description: 'C++ project to achive simple mesh simplification using edge collapse',
+imageLink: 'img/cs3242.png',
+content: 'These are the result pictures of my program.'
+},
+{
+id: 3,
 title: 'Unity Game Development Project',
 description: 'One 2D game and one 3D game',
 imageLink: 'img/unity.jpg',
 content: 'I learnt the module "Game Development" in University College Dublin during my student exchange program. There are two personal assignments in this module, and they are to build a 2D game and a 3D game by using Unity. The 2D game is picnic protector, where player need to hit flying insects to keep them away from people and food. The 3D game simulates an old European game: player controls his charactor to move the boat on the river and hit the opponent with the pole. The one who push the other out of the boat is the winner.'
 },
 {
-id: 3,
+id: 4,
 title: 'Road Sign Recogniser ',
 description: 'Content-based Image Retrieval System Project',
 imageLink: 'img/3246.jpg',
 content: 'With the development of the society, vehicles are becoming prevalent nowadays. As the result, a basic knowledge of road rules and signs is of importance. While more and more people already own driving licenses, some are still trying to get theirs. The road signs in Singapore are similar to the signs used in United Kingdom with changes introduced for local road conditions. Some road signs are simple and understandable while some may be confused to people, especially new drivers. \nThis project aims to solve this kind of problems by providing a road sign detection application that can read in one image with a road sign, detect this sign and display its meaning. Besides, the application also provides the functions to save/delete signs to memory list, add personal notes to signs as well as display all signs.'
 },
 {
-id: 4,
+id: 5,
 title: 'Interaction Design Project CS3240',
 description: 'Flash prototype design of a music application which can record sound, generate scores, play music in different instruments and share music',
 imageLink: 'img/3240.jpg',
 content: 'In the CS3240, we are required to build a prototype of an application that is designed by our team. We chose to design a music application which can record sound, generate scores, play music in different instruments and share music. The prototype is created by Adebe Flash, and it can display all basic functions. Main pages of this prototype are shown below.'
 },
 {
-id: 5,
+id: 6,
 title: '3D reconstruction CS4243',
 description: 'Python coding for a software which can build object structure from motion by using Bundler and PMVS',
 imageLink: 'img/4243.png',
 content: 'This project is to build a software which can build an object structure from motion by using Bundler and PMVS on Python platform. \nStructure from motion refers to the process of estimating three-dimensional structures from two-dimensional image sequences that may be coupled with local motion signals. \nMain steps in this project are initialization, photo preparation, feature matching, bundle adjustment, PMVS(Patch-based Multi-view Stereo), and 3D model visualization on MeshLab. Bundle adjustment is the most important part, which includes matching key point descriptors, organizing the matches into tracks, using five points algorithm and triangulation. The final results are a series of points stored in .ply file. Those points can be visualized in MeshLab, 3D mesh processing software system. '
 },
 {
-id: 6,
+id: 7,
 title: 'Static Program Analysis Tool Projec',
 description: 'Preparing',
 imageLink: 'img/3201.png',
