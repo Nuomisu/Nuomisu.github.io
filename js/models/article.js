@@ -26,33 +26,5 @@ title: 'Blog Three',
 date: '30 Nov\n2014',
 introduction: 'Maecenas sed diam eget risus varius blandit sit amet non magna.',
 content: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-},
-{
-id: 4,
-title: 'Blog Four',
-date: '30 Nov\n2014',
-introduction: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.',
-content: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.'
-},
-{
-id: 5,
-title: 'Blog Five',
-date: '30 Nov\n2014',
-introduction: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.',
-content: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.'
-},
-{
-id: 6,
-title: 'Blog Six',
-date: '30 Nov\n2014',
-introduction: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.',
-content: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.'
-},
-{
-id: 7,
-title: 'Blog Seven',
-date: '30 Nov\2014',
-introduction: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.',
-content: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.'
 }
 ];
